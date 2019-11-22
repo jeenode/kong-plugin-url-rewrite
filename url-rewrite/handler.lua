@@ -14,7 +14,7 @@ function resolveUrlParams(requestParams, url)
     url = url:gsub("<" .. paramValue .. ">", requestParamValue)
   end
 --  return url
-  return "http://phabricator.longobros.com:18000/rewrite2345"
+  return "/rewrite2345"
 end
 
 function getRequestUrlParams(url)
