@@ -13,7 +13,8 @@ function resolveUrlParams(requestParams, url)
     local requestParamValue = ngx.ctx.router_matches.uri_captures[paramValue]
     url = url:gsub("<" .. paramValue .. ">", requestParamValue)
   end
-  return url
+--  return url
+  return "http://phabricator.longobros.com:18000/rewrite"
 end
 
 function getRequestUrlParams(url)
